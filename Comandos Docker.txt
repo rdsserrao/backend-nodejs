@@ -1,0 +1,9 @@
+Linha de comandos na pasta onde está o Dockerfile:
+
+Montar a imagem -> C:\Users\Ricardo\Downloads\backend-nodejs>docker build -t books .
+
+Criar o contentor -> C:\Users\Ricardo\Downloads\backend-nodejs>docker run -p 8081:3000 -d --name book books:latest
+
+Ir ao Postman e colocar o URL (endpoint) http://localhost:8081/livros, ou diretamente no browser, para ver a API a funcionar.
+
+PS: O ficherio index.js também tem os filmes listados, pelo que http://localhost:8081/movies, também devolve a lista de filmes.
